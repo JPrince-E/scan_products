@@ -13,7 +13,7 @@ import 'package:scan_products/widgets/custom_textfield.dart';
 import 'package:image_gallery_saver/image_gallery_saver.dart';
 import 'dart:typed_data';
 
-import 'package:screenshot/screenshot.dart';
+// import 'package:screenshot/screenshot.dart';
 
 class UrlCheckerPage extends StatefulWidget {
   const UrlCheckerPage({super.key});
@@ -23,7 +23,7 @@ class UrlCheckerPage extends StatefulWidget {
 }
 
 class _UrlCheckerPageState extends State<UrlCheckerPage> {
-  ScreenshotController screenshotController = ScreenshotController();
+  // ScreenshotController screenshotController = ScreenshotController();
   final _controller = Get.put(HomepageController());
   String _data = 'EdBguAUrOH0xXkdTi7aEKGUA5JlTLY';
   bool loading = false;
