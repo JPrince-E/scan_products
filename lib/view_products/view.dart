@@ -82,14 +82,14 @@ class _ViewProductPageState extends State<ViewProductPage> {
     Size size = MediaQuery.of(context).size;
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text(
-          "",
-          style: TextStyle(fontWeight: FontWeight.bold),
-        ),
-        centerTitle: true,
-        backgroundColor: Colors.transparent,
-      ),
+      // appBar: AppBar(
+      //   title: const Text(
+      //     "",
+      //     style: TextStyle(fontWeight: FontWeight.bold),
+      //   ),
+      //   centerTitle: true,
+      //   backgroundColor: Colors.transparent,
+      // ),
       extendBodyBehindAppBar: true,
       body: GetBuilder<HomepageController>(
         init: _controller,
@@ -123,7 +123,7 @@ class _ViewProductPageState extends State<ViewProductPage> {
                         CustomButton(
                           width: 300,
                           height: 45,
-                          child: Text(
+                          child: const Text(
                             "Scan QR Code",
                             style: TextStyle(
                               color: Colors.white,

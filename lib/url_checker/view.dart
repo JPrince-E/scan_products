@@ -1,17 +1,17 @@
 import 'dart:async';
 import 'dart:math';
+import 'dart:typed_data';
 import 'dart:ui';
 
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:image_gallery_saver/image_gallery_saver.dart';
 import 'package:qr_flutter/qr_flutter.dart';
 import 'package:scan_products/firestore_service.dart';
 import 'package:scan_products/url_checker/controller.dart';
 import 'package:scan_products/widgets/custom_button.dart';
 import 'package:scan_products/widgets/custom_textfield.dart';
-import 'package:image_gallery_saver/image_gallery_saver.dart';
-import 'dart:typed_data';
 
 // import 'package:screenshot/screenshot.dart';
 
@@ -125,14 +125,6 @@ class _UrlCheckerPageState extends State<UrlCheckerPage> {
     Size size = MediaQuery.of(context).size;
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text(
-          "",
-          style: TextStyle(fontWeight: FontWeight.bold),
-        ),
-        centerTitle: true,
-        backgroundColor: Colors.transparent,
-      ),
       extendBodyBehindAppBar: true,
       body: GetBuilder<HomepageController>(
         init: _controller,
@@ -288,7 +280,7 @@ class _UrlCheckerPageState extends State<UrlCheckerPage> {
                         CustomButton(
                           width: 300,
                           height: 45,
-                          child: Text(
+                          child: const Text(
                             "Generate QR Code",
                             style: TextStyle(
                               color: Colors.white,

@@ -8,11 +8,13 @@ class HomePage extends StatelessWidget {
   final String title;
 
   TabBar get _tabBar => const TabBar(
-        // labelColor: Colors.blue,
-        // unselectedLabelColor: Colors.white,
+        labelStyle: TextStyle(color: Colors.white, fontSize: 30),
+        unselectedLabelStyle: TextStyle(color: Colors.amber, fontSize: 30),
+        indicatorWeight: 5,
+        indicatorColor: Colors.white,
         tabs: [
           Tab(
-            text: "Upload Products",
+            text: "Create Products",
           ),
           Tab(
             text: "View Products",
@@ -26,7 +28,7 @@ class HomePage extends StatelessWidget {
       length: 2,
       child: Scaffold(
           appBar: AppBar(
-            backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+            backgroundColor: Colors.blue.shade800,
             title: Text(
               title,
               textAlign: TextAlign.center,
